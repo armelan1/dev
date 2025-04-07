@@ -1,0 +1,102 @@
+{ "workbench.startupEditor": "none",
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "githubPullRequests.queries": [
+        {
+            "label": "Waiting For My Review",
+            "query": "repo:${owner}/${repository} is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "repo:${owner}/${repository} is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "repo:${owner}/${repository} is:open author:${user}"
+        }
+    ],
+    "gitlens.ai.experimental.model": "openai:gpt-4o",
+    "gitlens.views.patchDetails.files.layout": "list",
+    "gitlens.views.remotes.branches.layout": "list",
+    "gitlens.autolinks": [
+        {
+            "url": "https://dev.azure.com/azurequickstarts/azure-quickstart-templates/_build/results?buildId=159560&view=logs&j=275f1d19-1bd8-5591-b06b-07d489ea915a&t=14b22f05-782e-55fa-3e59-b66c82f514a9&l=124",
+            "prefix": "Dev MainH"
+        },
+        {
+            "url": "https://myaccess.microsoft.com/@MainH.onmicrosoft.com#/overview",
+            "prefix": "Home MainH"
+        },
+        {
+            "url": "vscode://Postman.postman-for-vscode?code=b87a9099d5aa339ec115c0dce1ca8793868049e8328d5ab9a671c7f11dc61230",
+            "prefix": "Vs"
+        },
+        {
+            "url": "https://scout.docker.com/org/mainh/settings/integrations/azure/add?inviterEmail=tyler.hawthorne0026%40gmail.com",
+            "prefix": "Dicker"
+        }
+    ],
+    "workbench.editorAssociations": {
+        "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.tc.json": "default",
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.png": "imagePreview.previewEditor",
+        "*.jpg": "memory-inspector.inspect",
+        "*.dib": "memory-inspector.inspect"
+    },
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "startWork:command"
+    ],
+    "workbench.editor.empty.hint": "hidden",
+    "terminal.integrated.env.linux": {},
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        ".fantomasignore": "ignore",
+        "*.jsonc": "json",
+        "*.yml": "code-text-binary",
+        "*.json": "ABB"
+    },
+    "gitlens.advanced.messages": {
+        "suppressIntegrationRequestTimedOutWarning": true
+    },
+    "liveshare.launcherClient": "visualStudioCode",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vs-kubernetes": {
+        "vscode-kubernetes.kubectl-path-linux": "/home/codespace/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/codespace/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "pddl.selectedPlanner": "Planning as a service (solver.planning.domains)",
+    "pddlParser.executableOrService": "/root/.vscode-remote/data/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Parser",
+    "pddl.validatorPath": "/root/.vscode-remote/data/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Validate",
+    "grunt.autoDetect": "on",
+    "pddlPlanner.executionTarget": "Output window",
+    "console-ninja.featureSet": "Community",
+    "git.openRepositoryInParentFolders": "always",
+    "pddl.valueSeqPath": "/home/codespace/.vscode-remote/data/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValueSeq",
+    "pddl.valStepPath": "/home/codespace/.vscode-remote/data/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValStep",
+    "github.codespaces.allowUnsafeConnections": true,
+    "github.codespaces.createCodespaceInNewWindow": true,
+    "github.codespaces.supportProxies": true,
+    "github.codespaces.showPerformanceExplorer": true,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "is:open assignee:${user} repo:${owner}/${repository}",
+            "groupBy": [
+                "milestone"
+            ]
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "gitlens.defaultDateLocale": null,
+    "workbench.editor.defaultBinaryEditor": "vscode.markdown.preview.editor",
+    "workbench.editor.enablePreviewFromCodeNavigation": true
+}
